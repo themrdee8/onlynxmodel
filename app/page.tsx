@@ -13,7 +13,7 @@ export default function Home() {
         id="home"
         className="relative bg-[#DCFFFC] w-full md:h-[570px] h-[320px] flex justify-between pt-24 overflow-hidden"
       >
-        <div className="p-3 md:p-8 mr-60">
+        <div className="p-3 md:p-8 mr-52">
           <h1 className=" font-bold text-[#B37300] md:text-[35px] uppercase text-wrap mb-2">
             Onlynx chatting
           </h1>
@@ -22,10 +22,10 @@ export default function Home() {
             <p className="text-[11px] md:text-[22px]">For individial models and for agencies</p>
           </p>
           <div className="flex items-center justify-between pt-4">
-            <div className="bg-[#B37300] text-white text-[11px] md:text-[18px] px-2.5 md:px-8 py-1 md:py-4 rounded-full">
+            <div className="bg-[#B37300] text-white text-[9px] md:text-[18px] px-1.5 md:px-8 py-1 md:py-4 rounded-full">
               Know more
             </div>
-            <div className="bg-white text-[#00D4FE] text-[11px] md:text-[18px] px-2.5 md:px-8 py-1 md:py-4 rounded-full mr-12">
+            <div className="bg-white text-[#00D4FE] text-[9px] md:text-[18px] px-1.5 md:px-8 py-1 md:py-4 rounded-full mr-12">
               Get started
             </div>
           </div>
@@ -34,7 +34,7 @@ export default function Home() {
           <Image
             src={cover}
             alt="cover"
-            className="rounded-full md:w-[680px] w-[300px] h-72 md:h-[680px] object-cover"
+            className="rounded-full md:w-[680px] w-[270px] h-[270px] md:h-[680px] object-cover"
           ></Image>
         </div>
       </div>
