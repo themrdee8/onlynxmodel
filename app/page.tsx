@@ -100,7 +100,7 @@ export default function Home() {
         <div>
           <h1 className="font-semibold pt-4 pb-3">Some more about us...</h1>
           <div className="flex items-center justify-between space-x-2">
-            <div className="border rounded-md h-[360px] md:mr-8 items-center md:h-[280px] p-3 md:p-6 w-[200px] md:w-[500px]">
+            <div className="border overflow-auto rounded-md h-[360px] md:mr-8 items-center md:h-[280px] p-3 md:p-6 w-[200px] md:w-[500px]">
               <p className="text-[15px] md:text-[18px] md:mr-32">
                 At Onlynx, we use the best and latest manipulation tactics to
                 reach the maximum income as soon as possible. Our team is
@@ -108,7 +108,7 @@ export default function Home() {
                 out the LTV of your subscribers
               </p>
             </div>
-            <div className="border rounded-md h-[360px] md:mr-8 items-center md:h-[280px] p-3 md:p-6 w-[200px] md:w-[500px]">
+            <div className="border overflow-auto rounded-md h-[360px] md:mr-8 items-center md:h-[280px] p-3 md:p-6 w-[200px] md:w-[500px]">
               <p className="text-[15px] md:text-[18px] md:mr-32">
                 If you choose us, you also don&apos;t have to worry about bad
                 chatting. All our associates are highly intelligent and
@@ -116,7 +116,7 @@ export default function Home() {
                 of the short-term fun.
               </p>
             </div>
-            <div className="border rounded-md h-[360px] md:mr-8 items-center md:h-[280px] p-3 md:p-6 w-[200px] md:w-[500px]">
+            <div className="border overflow-auto rounded-md h-[360px] md:mr-8 items-center md:h-[280px] p-3 md:p-6 w-[200px] md:w-[500px]">
               <p className="text-[15px] md:text-[18px] md:mr-32">
                 Besides, you never have to worry about your account&apos;s
                 safety. We keep track of every conversation, and thanks to the
