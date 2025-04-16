@@ -7,20 +7,28 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="w-full h-full bg-[#FFF6F6]">
+    <div className="w-full h-full">
       <Navbar />
       <div
         id="home"
         className="relative bg-[#DCFFFC] w-full md:h-[570px] h-[320px] flex justify-between pt-24 overflow-hidden"
       >
-        <div className="p-3 md:p-8 mr-52">
+        <div className="absolute md:h-40 md:w-40 h-18 w-18 rounded-full -translate-y-1/2 bg-[#BAB0A780] md:-left-12.5 -left-7.5 bottom-76 z-0" />
+        <div className="absolute md:h-48 md:w-48 h-20 w-20 rounded-full bg-[#CFE0E480] md:right-[700px] right-[200px] bottom-38 z-0" />
+        <div className="absolute md:h-48 md:w-48 h-22 w-22 rounded-full bg-[#BE854380] md:left-[200px] right-[270px] md:-bottom-[50px] -bottom-[35px] z-0" />
+        <div className="absolute md:h-24 md:w-24 h-20 w-20 rounded-full bg-[#CFE0E480] right-32.5 bottom-72 z-0" />
+        <div className="absolute md:h-24 md:w-24 h-20 w-20 rounded-full bg-[#9A653A80] right-7.5 bottom-44 z-0" />
+
+        <div className="relative z-10 p-3 md:p-8 mr-52">
           <h1 className=" font-bold text-[#B37300] md:text-[35px] uppercase text-wrap mb-2">
             Onlynx chatting
           </h1>
-          <p className="text-[11px] md:text-[30px] uppercase">
+          <h2 className="text-[11px] md:text-[30px] uppercase">
             Premium chatting service
-            <p className="text-[11px] md:text-[22px]">For individial models and for agencies</p>
-          </p>
+            <p className="text-[11px] md:text-[22px]">
+              For individial models and for agencies
+            </p>
+          </h2>
           <div className="flex items-center justify-between pt-4">
             <div className="bg-[#B37300] text-white text-[9px] md:text-[18px] px-1.5 md:px-8 py-1 md:py-4 rounded-full">
               Know more
@@ -30,6 +38,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+
         <div className="absolute md:-right-24 -right-8.5 -bottom-48.5 md:-bottom-[500px] transform z-0 -translate-y-1/2">
           <Image
             src={cover}
@@ -39,8 +48,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="body" className="w-full h-full p-5">
-        <div>
+      <div
+        id="body"
+        className="relative w-full h-full p-5 overflow-hidden bg-[#FFF6F6]"
+      >
+        {/* <div className="absolute md:h-24 md:w-24 h-20 w-20 rounded-full bg-blue-300 -right-9.5 bottom-52 z-0" />
+        <div className="absolute md:h-24 md:w-24 h-20 w-20 rounded-full bg-blue-300 -right-3.5 bottom-2 z-0" /> */}
+
+        <div className="relative z-10">
           <h1 className="font-semibold pb-3">What to know?</h1>
           <p className="text-[13px] mr-32">
             Onlynx is a Europe based chatting agency, working with European
@@ -48,21 +63,27 @@ export default function Home() {
           </p>
         </div>
 
-        <div>
+        <div className="relative z-10">
           <h1 className="font-semibold pt-4 pb-3">What makes us different?</h1>
           <p>Our chatting techniques makes us standout.</p>
-          <ol>
+          <ul className="list-disc pl-4">
             <li>
-              the first is the hard selling method: push the PPVs until someone
-              buys them
+              the <span className="text-[#B37300] font-semibold">first</span> is
+              the{" "}
+              <span className="text-[#B37300] font-bold">
+                hard selling method
+              </span>
+              : push the PPVs until someone buys them
             </li>
             <li>
-              the second is the relationship building method: choose one
-              subscriber out of ten who has the highest probability of becoming
-              a high spender focus on him, build a relationship and sell content
-              for several hundred bucks.
+              the <span className="text-[#B37300] font-semibold">second</span>{" "}
+              is the relationship building method: choose{" "}
+              <span className="text-[#B37300]">one subscriber</span> out of{" "}
+              <span className="text-[#B37300] font-bold">ten</span> who has the
+              highest probability of becoming a high spender focus on him, build
+              a relationship and sell content for several hundred bucks.
             </li>
-          </ol>
+          </ul>
           <p>
             Our team works so smoothly because we are able to use both tactics
             without losing any fans thanks to our highly developed analytic
@@ -70,7 +91,20 @@ export default function Home() {
           </p>
         </div>
 
-        <div>
+        <div className="absolute md:h-24 md:w-24 h-23 w-23 rounded-full bg-[#CFE0E480] -right-12.5 top-[18px] z-0" />
+        <div className="absolute md:h-24 md:w-24 h-23 w-23 rounded-full bg-[#BAB0A780] -left-3.5 top-[175px] z-0" />
+        <div className="absolute md:h-24 md:w-24 h-21 w-21 rounded-full bg-[#9A653A80] right-2.5 top-[170px] z-0" />
+        <div className="absolute md:h-24 md:w-24 h-27 w-27 rounded-full bg-[#CFE0E480] right-40.5 top-[320px] z-0" />
+
+        <div className="absolute md:h-24 md:w-24 h-24 w-24 rounded-full bg-[#CFE0E480] -left-1.5 bottom-[600px] z-0" />
+        <div className="absolute md:h-24 md:w-24 h-28 w-28 rounded-full bg-[#BE854380] left-38.5 bottom-[480] z-0" />
+        <div className="absolute md:h-24 md:w-24 h-20 w-20 rounded-full bg-[#BAB0A780] right-6.5 bottom-[400] z-0" />
+        <div className="absolute md:h-24 md:w-24 h-27 w-27 rounded-full bg-[#CFE0E480] right-40.5 bottom-[300] z-0" />
+        <div className="absolute md:h-24 md:w-24 h-20 w-20 rounded-full bg-[#9A653A80] left-10.5 bottom-[120px] z-0" />
+        <div className="absolute md:h-24 md:w-24 h-25 w-25 rounded-full bg-[#BE854380] right-16.5 -bottom-[10px] z-0" />
+
+
+        <div className="relative z-10">
           <h1 className="font-semibold pt-4 pb-3">Did you know?</h1>
           <Dropdown
             text="1. On OF, 80% of your income should be earned from your messages
@@ -97,15 +131,16 @@ export default function Home() {
           />
         </div>
 
-        <div>
+        <div className="relative z-10">
           <h1 className="font-semibold pt-4 pb-3">Some more about us...</h1>
           <div className="flex items-center justify-between space-x-2">
             <div className="border overflow-auto rounded-md h-[360px] md:mr-8 items-center md:h-[280px] p-3 md:p-6 w-[200px] md:w-[500px]">
               <p className="text-[15px] md:text-[18px] md:mr-32">
-                At Onlynx, we use the best and latest manipulation tactics to
-                reach the maximum income as soon as possible. Our team is
-                working tirelessly to come up with new ways and methods to max
-                out the LTV of your subscribers
+                At <span className="text-[#B37300] font-bold">Onlynx</span>, we
+                use the best and latest manipulation tactics to reach the
+                maximum income as soon as possible. Our team is working
+                tirelessly to come up with new ways and methods to max out the
+                LTV of your subscribers
               </p>
             </div>
             <div className="border overflow-auto rounded-md h-[360px] md:mr-8 items-center md:h-[280px] p-3 md:p-6 w-[200px] md:w-[500px]">
