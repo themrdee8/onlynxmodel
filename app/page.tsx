@@ -13,7 +13,7 @@ export default function Home() {
         id="home"
         className="relative bg-[#DCFFFC] w-full md:h-[570px] h-[320px] flex justify-between pt-24 overflow-hidden"
       >
-        <div className="absolute md:h-40 md:w-40 h-18 w-18 rounded-full -translate-y-1/2 bg-[#BAB0A780] md:-left-12.5 -left-7.5 bottom-76 z-0" />
+        <div className="absolute md:h-40 md:w-40 h-18 w-18 rounded-full -translate-y-1/2 bg-[#BAB0A780] md:-left-12.5 -left-7.5 md:bottom-76 bottom-38 z-0" />
         <div className="absolute md:h-48 md:w-48 h-20 w-20 rounded-full bg-[#CFE0E480] md:right-[700px] right-[200px] bottom-38 z-0" />
         <div className="absolute md:h-48 md:w-48 h-22 w-22 rounded-full bg-[#BE854380] md:left-[200px] right-[270px] md:-bottom-[50px] -bottom-[35px] z-0" />
         <div className="absolute md:h-24 md:w-24 h-20 w-20 rounded-full bg-[#CFE0E480] right-32.5 bottom-72 z-0" />
